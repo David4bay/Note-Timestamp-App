@@ -22,21 +22,40 @@
             </ul>
         </aside>
         <section class="main-content">
-            <header class="note-header"></header>
+            <header class="note-header">Create Task</header>
             <form>
-                <legend class="top-priority"></legend>
+                <legend class="top-priority">Tasks</legend>
                 <fieldset>
-                    <label for="" class="task"></label>
+                    <label for="" class="task">High Priority</label>
                     <input type="text" name="" id="" required>
+                    <i class="time-stamp"></i>
                 </fieldset>
                 <fieldset>
-                    <label for=""></label>
+                    <label for="">Normal Priority</label>
                     <input type="text" name="" id="" required>
+                    <i class="time-stamp"></i>
                 </fieldset>
                 <fieldset>
-                    <label for=""></label>
+                    <label for="isCompleted"></label>
                 </fieldset>
+                <input type='submit' />
             </form>
+        </section>
+        <section class="created-tasks">
+            <p class="all-ta">All tasks</p>
+            <table>
+                <tr>
+                    <th>High Priority Task</th>
+                    <th>Task</th>
+                    <th>Progress</th>
+                    <th>Time</th>
+                    <th>Normal Priority Task</th>
+                    <th>Task</th>
+                    <th>Progress</th>
+                    <th>Time</th>
+                </tr>
+                <tr class="created-tasks"></tr>
+            </table>
         </section>
     </main>
 </body>
