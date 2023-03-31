@@ -40,7 +40,7 @@ submitButton.addEventListener('click', function(e) {
         setTimeout(() => {
             alert.style.display = 'none';
             alert.innerText = '';
-        }, 5000);
+        }, 3500);
         tasks.removeChild();
     }
     let timestamp = DateTime.now().toFormat('MMMM dd, yyyy');
@@ -49,8 +49,8 @@ submitButton.addEventListener('click', function(e) {
 
     let firstList = document.createElement('td');
     let secondList = document.createElement('td');
-    firstList.innerText = `${timepost.timestamp} | ${timepost.highpriority}`;
-    secondList.innerText = ` ${timepost.timestamp} | ${timepost.normalpriority}`;
+    firstList.innerText = `${timepost.timestamp} | \n${timepost.highpriority}`;
+    secondList.innerText = ` ${timepost.timestamp} | \n${timepost.normalpriority}`;
     newRow.appendChild(firstList);
     newRow.appendChild(secondList);
     table.appendChild(newRow);
