@@ -32,10 +32,12 @@ main {
 
 ul {
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
     min-height: 100vh;
     padding: 1rem;
     gap: 1rem;
-    flex-direction: column;
     justify-content: space-between;
     border-right: 4px solid #000;
 }
@@ -71,21 +73,23 @@ span.bold {
 }
 
 div.alert {
-    display: block;
+    display: none;
     text-align: left;
     font-weight: 700;
     font-size: 1.2rem;
+    padding: 1.2rem;
     color: #fff;
     background-color: #ff0000;
+    transition: display 0.3s;
+}
+
+table {
+    display: inline-block;
 }
 
 th {
     padding: 0.4rem;
     border: 2px solid #000;
-}
-
-table {
-    display: inline-block;
 }
 
 th:hover {

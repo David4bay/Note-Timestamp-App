@@ -5,8 +5,8 @@ const form = document.getElementById('timestampForm');
 const closeSidebar = document.getElementById('close')
 const nav = document.getElementById('nav');
 const main = document.getElementById('main');
-const tasks = document.getElementById('tasksRow');
 const alert = document.getElementById('alert');
+const table = document.getElementById('all-tasks');
 
 function adjustMain() {
     main.style.display = 'flex';
@@ -35,17 +35,23 @@ submitButton.addEventListener('click', function(e) {
     const normalpriority = normalPriority.value;
 
     if (highpriority === '') {
-        alert('Add a value to High Priority Field')
+        alert.innerText = 'Hight Priority Field Empty!'
+        alert.style.display = 'block';
+        setTimeout(() => {
+            alert.style.display = 'none';
+            alert.innerText = '';
+        }, 5000);
         tasks.removeChild();
     }
     let timestamp = DateTime.now().toFormat('MMMM dd, yyyy');
-
+    let newRow = document.createElement('tr');
     let timepost = new TimeStamp(highpriority, normalpriority, timestamp);
 
     let firstList = document.createElement('td');
     let secondList = document.createElement('td');
     firstList.innerText = `${timepost.timestamp} | ${timepost.highpriority}`;
-    secondList.innerText = ` ${timepost.timestamp} | ${timepost.normalpriority}`
-    tasks.appendChild(firstList);
-    tasks.appendChild(secondList);
+    secondList.innerText = ` ${timepost.timestamp} | ${timepost.normalpriority}`;
+    newRow.appendChild(firstList);
+    newRow.appendChild(secondList);
+    table.appendChild(newRow);
 });
