@@ -1,10 +1,15 @@
 - [Introduction](#Introduction)
+- [Live Site](#Live_Site)
 - [Project Tasks](#Tasks)
 - [Method](#HowTo)
 - [Future Updates](#Updates)
 
+
 # Introduction 
 This is an ongoing pure JavaScript DOM project, a medium difficulty note-taking app that over several iterations should be able to do the following tasks.
+
+# Live Site
+-[Netlify Link](https://vocal-torrone-804739.netlify.app)
 
 # Tasks
 - [Persist Data to local Storage]()
