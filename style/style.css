@@ -8,4 +8,76 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  overflow: scroll;
+}
+
+main.background {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 0.25fr 1fr;
+  background: linear-gradient(45deg, hsl(226deg, 55%, 78%), hsl(155deg, 17%, 45%));
+}
+
+ul.list-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 4px solid #000;
+}
+
+div.first-grouped-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li.list-item {
+  list-style: none;
+  padding: 0.7rem;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: border 0.1s ease;
+}
+
+li.list-item:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+li.list-item:active {
+  border: 2px solid #000;
+  transform: translate(0%, 10%);
+}
+
+span.bold {
+  font-weight: 600;
+}
+
+tr, th {
+  min-width: 200px;
+  overflow-x: scroll;
+  padding: 0px 1rem;
+}
+
+article.main-content-body {
+  padding: 1rem 2rem;
+}
+
+header.note-header {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

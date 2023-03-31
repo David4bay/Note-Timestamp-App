@@ -4,59 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Note Taking App</title>
 </head>
 <body>
     <main class="background">
         <aside class="nav">
-            <ul>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <ul class="list-container">
+                <div class="first-grouped-list">
+                    <li class="list-item">Just</li>
+                    <li class="list-item">Testing</li>
+                    <li class="list-item">New Framework</li>
                 </div>
-                <div>
-                    <li></li>
+                <div class="last">
+                    <li class="list-item">Close Me <span class="bold">X</span></li>
                 </div>
             </ul>
         </aside>
-        <section class="main-content">
-            <header class="note-header">Create Task</header>
-            <form>
-                <legend class="top-priority">Tasks</legend>
-                <fieldset>
-                    <label for="" class="task">High Priority</label>
-                    <input type="text" name="" id="" required>
-                    <i class="time-stamp"></i>
-                </fieldset>
-                <fieldset>
-                    <label for="">Normal Priority</label>
-                    <input type="text" name="" id="" required>
-                    <i class="time-stamp"></i>
-                </fieldset>
-                <fieldset>
-                    <label for="isCompleted"></label>
-                </fieldset>
-                <input type='submit' />
-            </form>
-        </section>
-        <section class="created-tasks">
-            <p class="all-ta">All tasks</p>
-            <table>
-                <tr>
-                    <th>High Priority Task</th>
-                    <th>Task</th>
-                    <th>Progress</th>
-                    <th>Time</th>
-                    <th>Normal Priority Task</th>
-                    <th>Task</th>
-                    <th>Progress</th>
-                    <th>Time</th>
-                </tr>
-                <tr class="created-tasks"></tr>
-            </table>
-        </section>
+        <article class="main-content-body">
+            <section class="main-content">
+                <header class="note-header">Create Task</header>
+                <form>
+                    <legend class="top-priority">Tasks</legend>
+                    <fieldset>
+                        <label for="" class="task">High Priority</label>
+                        <input type="text" name="high-priority" id="highPriority" required>
+                        <i class="time-stamp"></i>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Normal Priority</label>
+                        <input type="text" name="normal-priority" id="normalPriority" required>
+                        <i class="time-stamp"></i>
+                    </fieldset>
+                    <fieldset>
+                        <label for="isCompleted"></label>
+                    </fieldset>
+                    <input type='submit' />
+                </form>
+            </section>
+            <section class="created-tasks">
+                <p class="all-ta">All tasks</p>
+                <table>
+                    <tr>
+                        <th>High Priority Task</th>
+                        <th>Task</th>
+                        <th>Progress</th>
+                        <th>Time</th>
+                        <th>Normal Priority Task</th>
+                        <th>Task</th>
+                        <th>Progress</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr class="created-tasks"></tr>
+                </table>
+            </section>
+        </article>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
