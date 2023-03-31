@@ -11,8 +11,8 @@
     <title>Note Taking App</title>
 </head>
 <body>
-    <main class="background">
-        <aside class="nav">
+    <main class="background" id="main">
+        <aside class="nav" id="nav">
             <ul class="list-container">
                 <div class="first-grouped-list">
                     <li class="list-item">Just</li>
@@ -20,17 +20,18 @@
                     <li class="list-item">New Framework</li>
                 </div>
                 <div class="last">
-                    <li id="close-sidebar" class=" close list-item">Close Me <span class="bold">X</span></li>
+                    <li id="close" class="list-item">Close Me <span class="bold">X</span></li>
                 </div>
             </ul>
         </aside>
         <article class="main-content-body">
             <section class="main-content">
                 <header class="note-header">Create Timestamp</header>
-                <form>
+                <form id='timestampForm'>
                     <hr/>
                     <legend class="top-priority">Tasks</legend>
                     <hr/>
+                    <div class="alert" id="alert"></div>
                     <fieldset>
                         <label for="task" class="task">High Priority</label>
                         <input type="text" placeholder=" High Priority task..." name="high-priority" id="highPriority" required>
@@ -41,7 +42,7 @@
                         <input type="text" placeholder=" Normal Priority task..." name="normal-priority" id="normalPriority" required>
                         <i class="time-stamp"></i>
                     </fieldset>
-                    <input type='submit' />
+                    <input type='submit' type="button" id="submitButton" />
                     <hr/>
                 </form>
             </section>
@@ -52,11 +53,12 @@
                         <th>1st Task | Progress / Time</th>
                         <th>2nd Task | Progress / Time</th>
                     </tr>
-                    <tr class="created-tasks"></tr>
+                    <tr id="tasksRow" class="created-tasks"></tr>
                 </table>
             </section>
         </article>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js" integrity="sha256-Nn+JGDrq3PuTxcDfJmmI0Srj5LpfOFlKqEiPwQK7y40=" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

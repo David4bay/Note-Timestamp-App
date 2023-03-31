@@ -15,16 +15,22 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
+  position: relative;
 }
 
-main.background {
+aside {
+  transition: transform 0.4s ease;
+}
+
+main {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 0.25fr 1fr;
+  transition: display 0.4s ease;
   background: linear-gradient(45deg, hsl(226deg, 55%, 78%), hsl(155deg, 17%, 45%));
 }
 
-ul.list-container {
+ul {
   display: flex;
   min-height: 100vh;
   padding: 1rem;
@@ -40,7 +46,7 @@ div.first-grouped-list {
   gap: 1rem;
 }
 
-li.list-item {
+li {
   list-style: none;
   padding: 0.7rem;
   background-color: #000;
@@ -49,13 +55,13 @@ li.list-item {
   transition: border 0.1s ease;
 }
 
-li.list-item:hover {
+li:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid #000;
 }
 
-li.list-item:active {
+li:active {
   border: 2px solid #000;
   transform: translate(0%, 10%);
 }
@@ -64,9 +70,22 @@ span.bold {
   font-weight: 600;
 }
 
+div.alert {
+  display: block;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff0000;
+}
+
 th {
   padding: 0.4rem;
   border: 2px solid #000;
+}
+
+table {
+  display: inline-block;
 }
 
 th:hover {
@@ -161,4 +180,26 @@ section.created-tasks {
 
 table {
   margin-top: 1rem;
+}
+
+div.show-sidebar {
+  width: 2rem;
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 819px) {
+  aside {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
