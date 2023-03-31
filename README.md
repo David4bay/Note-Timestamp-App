@@ -1,5 +1,5 @@
 - [Introduction](#Introduction)
-- [Project Taks](#Tasks)
+- [Project Tasks](#Tasks)
 - [Method](#HowTo)
 - [Future Updates](#Updates)
 

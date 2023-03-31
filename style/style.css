@@ -79,10 +79,6 @@ header.note-header {
   font-size: 1.7em;
   font-weight: 900;
   padding-bottom: 2rem;
-  transition: color 0.4s;
-}
-
-header.note-header:hover {
   color: #fff;
 }
 
@@ -98,18 +94,17 @@ input[type=submit] {
   display: block;
   margin: 0.6rem 0;
   font-size: 700;
-  padding: 0.3rem;
+  padding: 0.6rem;
   background-color: #000;
   color: #fff;
-  border: 2px solid #fff;
-  transition: padding 0.1s ease;
+  border: 2px solid #000;
+  transition: transform 0.1s ease;
 }
 
-input[type=submit]:hover {
-  background-color: #fff;
+input[type=submit]:active {
   color: #000;
-  border: 2px solid #000;
-  padding: 0.4rem;
+  background-color: #fff;
+  transform: translate(0%, 10%);
 }
 
 form {
@@ -143,4 +138,11 @@ input[type=text] {
 label[for=task] {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+section.created-tasks {
+  margin: 2rem 0;
+  background-color: #fff;
+  padding: 2rem;
+  border: 2px solid #000;
 }/*# sourceMappingURL=style.css.map */
