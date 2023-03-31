@@ -69,6 +69,12 @@ th {
   border: 2px solid #000;
 }
 
+th:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: default;
+}
+
 article.main-content-body {
   padding: 1rem 2rem;
 }
@@ -88,6 +94,8 @@ legend.top-priority {
   font-weight: 700;
   font-size: 1.5rem;
   padding: 1.5rem;
+  color: #fff;
+  background-color: #000;
 }
 
 input[type=submit] {
@@ -117,8 +125,12 @@ form {
 }
 
 p.all-tasks {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #000;
 }
 
 fieldset {
@@ -142,7 +154,11 @@ label[for=task] {
 
 section.created-tasks {
   margin: 2rem 0;
+  padding: 1rem;
   background-color: #fff;
-  padding: 2rem;
   border: 2px solid #000;
+}
+
+table {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

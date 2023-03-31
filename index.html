@@ -20,7 +20,7 @@
                     <li class="list-item">New Framework</li>
                 </div>
                 <div class="last">
-                    <li class="list-item">Close Me <span class="bold">X</span></li>
+                    <li id="close-sidebar" class=" close list-item">Close Me <span class="bold">X</span></li>
                 </div>
             </ul>
         </aside>
@@ -28,7 +28,9 @@
             <section class="main-content">
                 <header class="note-header">Create Timestamp</header>
                 <form>
+                    <hr/>
                     <legend class="top-priority">Tasks</legend>
+                    <hr/>
                     <fieldset>
                         <label for="task" class="task">High Priority</label>
                         <input type="text" placeholder=" High Priority task..." name="high-priority" id="highPriority" required>
@@ -39,20 +41,16 @@
                         <input type="text" placeholder=" Normal Priority task..." name="normal-priority" id="normalPriority" required>
                         <i class="time-stamp"></i>
                     </fieldset>
-                    <fieldset>
-                        <label for="isCompleted"></label>
-                    </fieldset>
                     <input type='submit' />
+                    <hr/>
                 </form>
             </section>
             <section class="created-tasks">
                 <p class="all-tasks">All tasks</p>
                 <table>
                     <tr>
-                        <th>1st Task</th>
-                        <th>Progress / Time</th>
-                        <th>2nd Task</th>
-                        <th>Progress / Time</th>
+                        <th>1st Task | Progress / Time</th>
+                        <th>2nd Task | Progress / Time</th>
                     </tr>
                     <tr class="created-tasks"></tr>
                 </table>
