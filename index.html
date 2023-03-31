@@ -26,17 +26,17 @@
         </aside>
         <article class="main-content-body">
             <section class="main-content">
-                <header class="note-header">Create Task</header>
+                <header class="note-header">Create Timestamp</header>
                 <form>
                     <legend class="top-priority">Tasks</legend>
                     <fieldset>
-                        <label for="" class="task">High Priority</label>
-                        <input type="text" name="high-priority" id="highPriority" required>
+                        <label for="task" class="task">High Priority</label>
+                        <input type="text" placeholder=" High Priority task..." name="high-priority" id="highPriority" required>
                         <i class="time-stamp"></i>
                     </fieldset>
                     <fieldset>
-                        <label for="">Normal Priority</label>
-                        <input type="text" name="normal-priority" id="normalPriority" required>
+                        <label for="task">Normal Priority</label>
+                        <input type="text" placeholder=" Normal Priority task..." name="normal-priority" id="normalPriority" required>
                         <i class="time-stamp"></i>
                     </fieldset>
                     <fieldset>
@@ -46,17 +46,13 @@
                 </form>
             </section>
             <section class="created-tasks">
-                <p class="all-ta">All tasks</p>
+                <p class="all-tasks">All tasks</p>
                 <table>
                     <tr>
-                        <th>High Priority Task</th>
-                        <th>Task</th>
-                        <th>Progress</th>
-                        <th>Time</th>
-                        <th>Normal Priority Task</th>
-                        <th>Task</th>
-                        <th>Progress</th>
-                        <th>Time</th>
+                        <th>1st Task</th>
+                        <th>Progress / Time</th>
+                        <th>2nd Task</th>
+                        <th>Progress / Time</th>
                     </tr>
                     <tr class="created-tasks"></tr>
                 </table>
