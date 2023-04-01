@@ -2,6 +2,8 @@
 
 - [Live Site](#Live_Site)
 
+- [Screenshot](#Screenshot)
+
 - [Project Tasks](#tasks)
 
 - [Method](#howto)
@@ -14,7 +16,11 @@ This is an ongoing pure JavaScript DOM project, a medium difficulty note-taking 
 
 # Live Site
 
--[Netlify Link](https://vocal-torrone-804739.netlify.app)
+ Link to live site, [Netlify Link](https://vocal-torrone-804739.netlify.app).
+ 
+
+# Screenshot
+![Timepost Image](/src/Timepost%20Screenshot.PNG)
 
 # Tasks
 
