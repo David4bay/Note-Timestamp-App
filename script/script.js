@@ -54,4 +54,5 @@ submitButton.addEventListener('click', function(e) {
     newRow.appendChild(firstList);
     newRow.appendChild(secondList);
     table.appendChild(newRow);
+    timepost = null;
 });

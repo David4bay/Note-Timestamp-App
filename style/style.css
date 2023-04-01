@@ -84,7 +84,7 @@ div.alert {
 }
 
 table {
-  display: inline-block;
+  width: 100%;
 }
 
 th {
@@ -115,6 +115,8 @@ td::first-line {
 
 article.main-content-body {
   padding: 1rem 2rem;
+  min-width: 80%;
+  margin: auto;
 }
 
 header.note-header {
