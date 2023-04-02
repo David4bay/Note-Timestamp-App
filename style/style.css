@@ -27,6 +27,7 @@ main {
   min-height: 100vh;
   grid-template-columns: 0.25fr 1fr;
   transition: display 0.4s ease;
+  filter: saturate(1.5);
   background: linear-gradient(45deg, hsl(226deg, 55%, 78%), hsl(155deg, 17%, 45%));
 }
 
