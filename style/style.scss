@@ -216,6 +216,34 @@ div.show-sidebar {
     transform: rotate(-45deg);
 }
 
+.delete-btn:hover > .delete-button {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.delete-btn {
+    border: 1px solid #000;
+}
+
+.delete-button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.1s ease;
+}
+  
+.delete-button:active {
+    transform: translate(0%, 10%);
+}
+  
 @media (max-width: 819px) {
     aside {
         display: none;
@@ -225,3 +253,4 @@ div.show-sidebar {
         flex-direction: column;
     }
 }
+
